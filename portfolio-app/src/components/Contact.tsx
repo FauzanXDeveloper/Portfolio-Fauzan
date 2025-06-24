@@ -59,20 +59,20 @@ const Contact: React.FC = () => {
         {
             icon: Mail,
             label: "Email",
-            value: "your@email.com",
+            value: "fauzansahmad1@email.com",
             href: "mailto:your@email.com"
         },
         {
             icon: Phone,
             label: "Phone",
-            value: "+1 (555) 123-4567",
-            href: "tel:+15551234567"
+            value: "(+60) 13 375 6261",
+            href: "tel:+60133756261"
         },
         {
             icon: MapPin,
             label: "Location",
-            value: "San Francisco, CA",
-            href: "https://maps.google.com"
+            value: "Bandar Baru Bangi, Selangor, Malaysia",
+            href: "https://maps.app.goo.gl/i4cK3997T23zjCik8"
         }
     ];
 
@@ -80,13 +80,13 @@ const Contact: React.FC = () => {
         {
             icon: Github,
             label: "GitHub",
-            href: "https://github.com/yourusername",
+            href: "https://github.com/FauzanXDeveloper",
             color: "hover:bg-gray-800"
         },
         {
             icon: Linkedin,
             label: "LinkedIn",
-            href: "https://linkedin.com/in/yourusername",
+            href: "https://www.linkedin.com/in/ahmad-fauzan-abu-aini-955b7034b/",
             color: "hover:bg-blue-600"
         },
         {
@@ -99,7 +99,7 @@ const Contact: React.FC = () => {
 
     if (submitted) {
         return (
-            <section id="contact" className="py-20 bg-gray-50">
+            <section id="contact" className="py-20 bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
                 <div className="max-w-4xl mx-auto px-6 text-center">
                     <motion.div
                         initial={{ scale: 0, opacity: 0 }}
@@ -149,7 +149,7 @@ const Contact: React.FC = () => {
     }
 
     return (
-        <section id="contact" className="py-20 bg-gray-50">
+        <section id="contact" className="py-20 bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
             <motion.div
                 className="max-w-6xl mx-auto px-6"
                 variants={containerVariants}

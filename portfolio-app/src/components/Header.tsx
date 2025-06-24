@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
+import ThemeToggle from './ThemeToggle';
 
 const Header: React.FC = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -69,11 +70,9 @@ const Header: React.FC = () => {
                         <a href="#hero" className="text-2xl font-bold text-white hover:text-purple-400 transition-colors duration-300">
                             Portfolio
                         </a>
-                    </motion.div>
-
-                    {/* Desktop Navigation */}
+                    </motion.div>                    {/* Desktop Navigation */}
                     <motion.nav
-                        className="hidden md:flex space-x-8"
+                        className="hidden md:flex space-x-8 items-center"
                         initial={{ opacity: 0, y: -20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5, delay: 0.2 }}
@@ -93,6 +92,9 @@ const Header: React.FC = () => {
                                 <span className="absolute inset-x-0 -bottom-1 h-0.5 bg-purple-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
                             </motion.a>
                         ))}
+                        <div className="ml-4">
+                            <ThemeToggle />
+                        </div>
                     </motion.nav>
 
                     {/* Mobile Menu Button */}

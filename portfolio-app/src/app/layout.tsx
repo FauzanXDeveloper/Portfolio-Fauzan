@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
+import { ThemeProvider } from '../contexts/ThemeContext';
 
 export const metadata: Metadata = {
   title: 'Your Name - Full Stack Developer',
@@ -29,10 +30,8 @@ export const metadata: Metadata = {
     description: 'Portfolio of a passionate full-stack developer specializing in React, Next.js, and modern web technologies.',
     images: ['/og-image.jpg'],
     creator: '@yourusername',
-  },
-  viewport: 'width=device-width, initial-scale=1',
+  },  viewport: 'width=device-width, initial-scale=1',
   robots: 'index, follow',
-  canonical: 'https://yourportfolio.com',
 };
 
 export default function RootLayout({
@@ -43,7 +42,9 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body className="antialiased">
-        {children}
+        <ThemeProvider>
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
