@@ -2,6 +2,9 @@
 
 A beautiful, interactive, and responsive portfolio website built with React, Next.js, TypeScript, Tailwind CSS, and Framer Motion.
 
+## Live Demo
+Link : https://fauzanxdeveloper.github.io/Portfolio-Fauzan/ 
+
 ## 🚀 Features
 
 - **Modern Design**: Clean, professional UI with gradient backgrounds and smooth animations
