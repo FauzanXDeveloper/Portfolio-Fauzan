@@ -7,7 +7,7 @@ portfolio-app/node_modules/
 out/
 
 # Production build
-dist/
+# dist/ # Comment out for GitHub Pages deployment
 build/
 
 # Environment variables

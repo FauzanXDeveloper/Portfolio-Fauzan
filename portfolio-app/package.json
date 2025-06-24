@@ -1,12 +1,13 @@
 {
   "name": "portfolio-app",
   "version": "1.0.0",
-  "private": true,
-  "scripts": {
+  "private": true,  "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "export": "next build",
+    "deploy": "next build && git add dist/ && git commit -m \"Deploy to GitHub Pages\" && git subtree push --prefix dist origin gh-pages"
   },
   "dependencies": {
     "@react-spring/web": "^10.0.1",

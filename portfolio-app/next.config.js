@@ -1,9 +1,10 @@
 module.exports = {
   reactStrictMode: true,
+  output: 'export',
+  trailingSlash: true,
+  skipTrailingSlashRedirect: true,
+  distDir: 'dist',
   images: {
-    domains: ['example.com'], // Add your image domains here
-  },
-  experimental: {
-    appDir: true,
-  },
+    unoptimized: true
+  }
 };
