@@ -1,0 +1,9 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[185],{2676:function(e,t,r){Promise.resolve().then(r.t.bind(r,2489,23)),Promise.resolve().then(r.bind(r,6826))},6826:function(e,t,r){"use strict";r.r(t),r.d(t,{ThemeProvider:function(){return ThemeProvider},useTheme:function(){return useTheme}});var o=r(7437),n=r(2265);let s=(0,n.createContext)(void 0),useTheme=()=>{let e=(0,n.useContext)(s);if(void 0===e)throw Error("useTheme must be used within a ThemeProvider");return e},ThemeProvider=e=>{let{children:t}=e,[r,u]=(0,n.useState)("dark"),[i,l]=(0,n.useState)(!1);return((0,n.useEffect)(()=>{l(!0);let e=localStorage.getItem("theme");e?u(e):window.matchMedia("(prefers-color-scheme: dark)").matches?u("dark"):u("light")},[]),(0,n.useEffect)(()=>{i&&(localStorage.setItem("theme",r),document.documentElement.classList.toggle("dark","dark"===r))},[r,i]),i)?(0,o.jsx)(s.Provider,{value:{theme:r,toggleTheme:()=>{u(e=>"light"===e?"dark":"light")}},children:t}):null}},2489:function(){},622:function(e,t,r){"use strict";/**
+ * @license React
+ * react-jsx-runtime.production.min.js
+ *
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */var o=r(2265),n=Symbol.for("react.element"),s=Symbol.for("react.fragment"),u=Object.prototype.hasOwnProperty,i=o.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,l={key:!0,ref:!0,__self:!0,__source:!0};function q(e,t,r){var o,s={},c=null,a=null;for(o in void 0!==r&&(c=""+r),void 0!==t.key&&(c=""+t.key),void 0!==t.ref&&(a=t.ref),t)u.call(t,o)&&!l.hasOwnProperty(o)&&(s[o]=t[o]);if(e&&e.defaultProps)for(o in t=e.defaultProps)void 0===s[o]&&(s[o]=t[o]);return{$$typeof:n,type:e,key:c,ref:a,props:s,_owner:i.current}}t.Fragment=s,t.jsx=q,t.jsxs=q},7437:function(e,t,r){"use strict";e.exports=r(622)}},function(e){e.O(0,[971,472,744],function(){return e(e.s=2676)}),_N_E=e.O()}]);
