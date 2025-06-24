@@ -4,6 +4,8 @@ module.exports = {
   trailingSlash: true,
   skipTrailingSlashRedirect: true,
   distDir: 'dist',
+  basePath: '/Portfolio-Fauzan',
+  assetPrefix: '/Portfolio-Fauzan/',
   images: {
     unoptimized: true
   }
