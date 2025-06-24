@@ -132,12 +132,12 @@ const Footer: React.FC = () => {
                   href="mailto:your@email.com" 
                   className="text-purple-400 hover:text-purple-300 transition-colors duration-300"
                 >
-                  your@email.com
+                  fauzansahmad1@email.com
                 </a>
               </div>
               <div className="text-gray-400">
                 <p className="text-sm">Based in</p>
-                <p className="text-white">San Francisco, CA</p>
+                <p className="text-white">Bandar Baru Bangi, Selangor, Malaysia</p>
               </div>
             </div>
           </motion.div>
